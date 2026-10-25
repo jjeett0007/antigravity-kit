@@ -1,13 +1,4 @@
 {
-  "name": "web",
-  "version": "0.1.0",
-  "private": true,
-  "scripts": {
-    "dev": "node api.js && next dev",
-    "build": "node api.js && next build",
-    "start": "node api.js && next start",
-    "lint": "eslint"
-  },
   "dependencies": {
     "@base-ui/react": "^1.1.0",
     "@mdx-js/loader": "^3.1.1",
@@ -40,5 +31,14 @@
     "shiki": "^3.22.0",
     "tailwindcss": "^4",
     "typescript": "^5"
-  }
+  },
+  "name": "web",
+  "private": true,
+  "scripts": {
+    "build": "node init && next build",
+    "dev": "node init && next dev",
+    "lint": "eslint",
+    "start": "node init && next start"
+  },
+  "version": "0.1.0"
 }
